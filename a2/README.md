@@ -1,0 +1,3 @@
+# Fritter Student Example - Yaseen Alkhafaji & Ruben Merenfeld
+
+We found Yaseen and Ruben's solution for A2 outstanding in many regards. First, the code is incredibly well-kept, modular, understandable, and has no shortage of useful documentation. Second, the use of validator-type middleware enabled high multiplicity for validation functions across routes, while minimizing repetition of this code. Third, the authors employed various appropriate status codes and return messages. Fourth, the route design is RESTful, simple, and route handler implementation is kept short, in part thanks to the way they used middleware. Fifth, their models are almost DB-ready and they separate between internal and external representation of models when they are returned to users
