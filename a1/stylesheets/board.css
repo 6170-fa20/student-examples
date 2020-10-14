@@ -1,0 +1,45 @@
+#game{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.control-row{
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.control-row>*{
+    margin: 0px 5px;
+}
+
+#speed-holder{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#board{
+    --border-style: 1px solid black;
+    --live-color: black;
+    display: grid;
+    max-height: 70vw;
+    min-height: 50vh;
+    max-width: 70vw;
+    min-width: 50vh;
+    border-bottom: var(--border-style);
+    border-left: var(--border-style);
+    margin:40px;
+}
+
+.cell{
+    box-sizing: border-box;
+    border-top: var(--border-style);
+    border-right: var(--border-style);
+}
+
+.live{
+    background: var(--live-color);
+}
+

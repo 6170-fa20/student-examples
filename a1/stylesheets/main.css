@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+    --header-blue: #111EC6;
+    font-family: Quicksand, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header {
+    box-sizing: border-box;
+    height: 15vh;
+    margin-top: 10px;
+    padding: 40px;
+    border-color: var(--header-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    flex:auto 0 0;
+    color: var(--header-blue);
+}
+
+h2{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex: auto 1 0;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#description{
+    font-size: 15px;
+    padding: 10px 40px;
+    min-width: 300px;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
