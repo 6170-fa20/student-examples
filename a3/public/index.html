@@ -1,0 +1,213 @@
+<html>
+
+<head>
+  <title>Fritter</title>
+  <meta name="author" content="6.170 Staff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/javascripts/services.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Fritter</h1>
+  </header>
+
+  <main class="two-col">
+    <section id="operations-container">
+      <h2>Operations:</h2>
+      <div class="scrollbox">
+        <form id="create-user">
+          <h3>Create User</h3>
+          <div>
+            <label for="username">Username:</label>
+            <input id="username" name="username">
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input id="password" name="password">
+          </div>
+          <input type="submit" value="Create User">
+        </form>
+
+        <form id="delete-user">
+          <h3>Delete User</h3>
+          <input type="submit" value="Delete User">
+        </form>
+
+        <form id="change-username">
+          <h3>Change Username</h3>
+          <div>
+            <label for="username">New Username:</label>
+            <input id="username" name="username">
+          </div>
+          <input type="submit" value="Change Username">
+        </form>
+
+        <form id="change-password">
+          <h3>Change Password</h3>
+          <div>
+            <label for="password">New Password:</label>
+            <input id="password" name="password">
+          </div>
+          <input type="submit" value="Change Password">
+        </form>
+
+        <form id="sign-in">
+          <h3>Sign In</h3>
+          <div>
+            <label for="username">Username:</label>
+            <input id="username" name="username">
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input id="password" name="password">
+          </div>
+          <input type="submit" value="Sign In">
+        </form>
+
+        <form id="sign-out">
+          <h3>Sign Out</h3>
+          <input type="submit" value="Sign out">
+        </form>
+
+        <form id="view-all-freets">
+            <h3>View All Freets</h3>
+            <input type="submit" value="View All Freets">
+          </form>
+
+        <form id="view-freets-by-author">
+          <h3>View Freets By Author</h3>
+          <div>
+            <label for="author">Author:</label>
+            <input id="author" name="author">
+          </div>
+          <input type="submit" value="View Freets By Author">
+        </form>
+
+        <form id="create-freet">
+          <h3>Create Freet</h3>
+          <div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content"></textarea>
+          </div>
+          <input type="submit" value="Create Freet">
+        </form>
+
+        <form id="edit-freet">
+          <h3>Edit Freet</h3>
+          <div>
+            <label for="id">ID:</label>
+            <input id="id" name="id">
+          </div>
+          <div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content"></textarea>
+          </div>
+          <input type="submit" value="Edit Freet">
+        </form>
+
+        <form id="delete-freet">
+          <h3>Delete Freet</h3>
+          <div>
+            <label for="id">ID:</label>
+            <input id="id" name="id">
+          </div>
+          <input type="submit" value="Delete Freet">
+        </form>
+
+        <form id="view-all-refreets">
+          <h3>View All Refreets</h3>
+          <input type="submit" value="View All Refreets">
+        </form>
+
+        <form id="view-refreets-by-author">
+          <h3>View Refreets By Author</h3>
+          <div>
+            <label for="author">Author:</label>
+            <input id="author" name="author">
+          </div>
+          <input type="submit" value="View Refreets By Author">
+        </form>
+
+        <form id="create-refreet">
+          <h3>Create Refreet</h3>
+          <div>
+            <label for="id">Freet ID:</label>
+            <input id="id" name="id">
+          </div>
+          <input type="submit" value="Create Refreet">
+        </form>
+
+        <form id="delete-refreet">
+          <h3>Delete Refreet</h3>
+          <div>
+            <label for="id">Refreet ID:</label>
+            <input id="id" name="id">
+          </div>
+          <input type="submit" value="Delete Refreet">
+        </form>
+
+        <form id="follow">
+          <h3>Follow</h3>
+          <div>
+            <label for="username">Username:</label>
+            <input id="username" name="username">
+          </div>
+          <input type="submit" value="Follow">
+        </form>
+
+        <form id="unfollow">
+          <h3>Unfollow</h3>
+          <div>
+            <label for="username">Username:</label>
+            <input id="username" name="username">
+          </div>
+          <input type="submit" value="Unfollow">
+        </form>
+
+        <form id="get-following">
+          <h3>View Users Who You Follow</h3>
+          <input type="submit" value="View Users Who You Follow">
+        </form>
+
+        <form id="upvote">
+          <h3>Upvote Freet</h3>
+          <div>
+            <label for="id">Freet ID:</label>
+            <input id="id" name="id">
+          </div>
+          <input type="submit" value="Upvote Freet">
+        </form>
+
+        <form id="delete-upvote">
+          <h3>Delete Upvote for Freet</h3>
+          <div>
+            <label for="id">Freet ID:</label>
+            <input id="id" name="id">
+          </div>
+          <input type="submit" value="Delete Upvote for Freet">
+        </form>
+
+        <form id="get-upvoted">
+          <h3>View Upvoted Freets By User</h3>
+          <div>
+            <label for="username">Username:</label>
+            <input id="username" name="username">
+          </div>
+          <input type="submit" value="View Upvoted Freets By User">
+        </form>
+
+      </div>
+    </section>
+    <section>
+      <h2>Response:</h2>
+      <div class="scrollbox">
+        <pre id="response" class="teletype"></pre>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
