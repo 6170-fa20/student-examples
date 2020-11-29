@@ -1,0 +1,5 @@
+# Fritter Front End Student Example - Calvin Phung + Ben Wolz
+
+link: https://cphung-benwolz-fritter.herokuapp.com/feed
+
+We particularly loved the design of Calvin and Ben's Fritter for A5 because of the particular attention to user experience. Firstly, notifications of error messages, which they implement as toasts (see https://bootstrap-vue.org/docs/components/toast for explanation of toasts), appear unintrusively on the page, consistently at the same place - the top of the page. Secondly, the combination of selected colors with fixed navigation at the top of the page produced a design where information scent was readily available. Thirdly, their use of cards (see https://bootstrap-vue.org/docs/components/card) made for a simple and lightweight yet rich and useable display of data, like freets and user profiles. Great job to the both of you, Calvin and Ben!
